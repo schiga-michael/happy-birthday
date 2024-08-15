@@ -1,88 +1,94 @@
 * {
-    font-family: "Montserrat", source-han-sans-traditional, sans-serif, "Microsoft JhengHei";
-    font-style: normal;
-    text-decoration: none;
-    outline: none;
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
-    /* 解決手機端頁面的鼠標點擊出現藍色背景 */
-    /* border: 1px solid rgb(255, 255, 255); */
+  font-family: "Montserrat", source-han-sans-traditional, sans-serif,
+    "Microsoft JhengHei";
+  font-style: normal;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  /* 解決手機端頁面的鼠標點擊出現藍色背景 */
+  /* border: 1px solid rgb(255, 255, 255); */
 }
 
 html {
-    background-color: #D4CBC7;
-    margin: 0;
+  background-color: #d4cbc7;
+  margin: 0;
 }
 
 body {
-    background-color: #D4CBC7;
-    margin: 0;
-    text-align: center;
+  background-color: #d4cbc7;
+  margin: 0;
+  text-align: center;
 }
 
-
 img {
-    width: 100%;
-    height: auto;
-    pointer-events: none;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
 }
 
 a {
-    color: inherit;
+  color: inherit;
 }
 
 *::selection {
-    color: #D4CBC7;
-    background:#1c1c1c;
-  }
-  
+  color: #d4cbc7;
+  background: #1c1c1c;
+}
 
 h1 {
-    font-size: 36pt;
-    text-align: center;
-    font-weight: 600;
-    color: #1F1F1F;
-    margin:40px auto 5px auto;
+  font-size: 36pt;
+  text-align: center;
+  font-weight: 600;
+  color: #1f1f1f;
+  margin: 40px auto 5px auto;
 }
 
 .junior_container {
-    width: 280px;
-    margin: auto;
-    position: relative;
+  width: 280px;
+  margin: auto;
+  position: relative;
 }
 
-.junior{
-    width: 280px;
-   z-index: 1;
+.junior {
+  width: 280px;
+  z-index: 1;
 }
-.outfit{
-    width: 280px;
-    position: absolute;
-    top:0px;
-    right: 0px;
-    z-index: 2;
+.outfit {
+  width: 280px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
 }
 
 button {
-    width: 200px;
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: 3px;
-    border-radius: 30px;
-    color: #D4CBC7;
-    background-color: #1F1F1F;
-    outline: none;
-    padding: 10px;  
-    text-align: center; 
+  width: 200px;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  border-radius: 30px;
+  border: 2px solid #1f1f1f;
+  color: #d4cbc7;
+  background-color: #1f1f1f;
+  outline: none;
+  padding: 10px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #534747;
+  border: 2px solid #534747;
 }
 
 button:active {
-    background-color: #686868;
-  }
+  background-color: #d4cbc7;
+  color: #1f1f1f;
+}
 
-footer div{
-    margin: 50px;
-    font-size: 10px;
-    color:#686868;
-    text-align: center;
+footer div {
+  margin: 50px;
+  font-size: 10px;
+  color: #686868;
+  text-align: center;
 }
