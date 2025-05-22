@@ -41,30 +41,30 @@ $secondary-100: #2c1c13;
 html {
   background: $primary-100;
 }
-footer {
-  text-align: center;
-  background: $secondary-100;
-  color: $primary-100;
-  padding: 15px;
-}
 section {
-  &:nth-child(1) {
-    padding: 20px 0 0;
+  display: flex;
+  .text_container {
+    padding: 20px 20px 0;
+    width: 50%;
+    height: 92vh;
   }
-  &:nth-child(2) {
+  .emoji_container {
+    padding: 20px 0 0;
     background: $secondary-100;
+    width: 50%;
+    height: 92vh;
   }
 }
 .bg_375 {
-  width: 375px;
   margin: 0 auto;
-  border: 1px solid $secondary-100;
 }
-@media screen and (max-width: 991px) {
-  .bg_375 {
-    width: 100vw;
-  }
+footer {
+  text-align: center;
+  color: $secondary-100;
+  padding: 15px;
+  border-top: 1px solid $secondary-100;
 }
+
 /* ------------------ 大標題 ------------------ */
 .title h1 {
   padding: 10px 15px 0;
@@ -89,7 +89,6 @@ section {
           font-size: 1.2rem;
           line-height: 1.6;
           text-align: justify;
-          // text-decoration: underline;
         }
       }
       &:nth-child(2) {
@@ -114,10 +113,11 @@ section {
   text-align: center;
   list-style: none;
   flex-wrap: wrap;
+
   li {
     width: 25%;
     position: relative;
-    margin: 0 auto 10px;
+    margin: 0 auto 20px;
     color: #fff;
     background: $secondary-100;
     mix-blend-mode: luminosity;
@@ -149,5 +149,59 @@ section {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  section {
+    display: block;
+    .text_container {
+      padding: 20px 0 0;
+      width: 100vw;
+      min-height: 30vh;
+      height: auto;
+    }
+    .emoji_container {
+      padding: 0;
+      background: $secondary-100;
+      width: 100vw;
+      min-height: 68vh;
+      height: auto;
+      position: relative;
+      z-index: 2;
+    }
+  }
+  footer {
+    background: $secondary-100;
+    color: $primary-100;
+    padding: 5px;
+     border-top: none;
+  }
+  .tab ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0 0;
+    li {
+      width: 20%;
+    }
+  }
+  .tabcontent {
+    ul {
+      li {
+        &:nth-child(1) {
+          p {
+            font-size: 1rem;
+            line-height: 1.6;
+          }
+        }
+        &:nth-child(2) {
+          width: 15%;
+          padding: 0 2vw;
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
   }
 }
