@@ -64,8 +64,8 @@ footer {
 /* ------------------ 大標題 ------------------ */
 .title h1 {
   padding: 10px 15px 0;
-  font-size: 3rem;
-  line-height: 1.3;
+  font-size: 2.8rem;
+  line-height: 1.2;
 }
 .title h1 span.title_big {
   font-size: 4rem;
@@ -82,6 +82,9 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 15px;
+}
+.tabcontent ul li {
+  transition: all 2s;
 }
 .tabcontent ul li:nth-child(1) {
   width: 75%;
@@ -160,14 +163,14 @@ footer {
   section .text_container {
     padding: 20px 0 0;
     width: 100vw;
-    min-height: 35vh;
+    min-height: 32vh;
     height: auto;
   }
   section .emoji_container {
     padding: 10px 0 0;
     background: #2c1c13;
     width: 100vw;
-    min-height: 60vh;
+    min-height: 64vh;
     height: auto;
     position: relative;
     z-index: 2;
@@ -194,6 +197,7 @@ footer {
   .title h1 {
     padding: 10px 15px 0;
     font-size: 2rem;
+    line-height: 1.2;
   }
   .title h1 span.title_big {
     font-size: 2.5rem;
