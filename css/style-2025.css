@@ -1,4 +1,27 @@
 @charset "UTF-8";
+/* ---reset.css--- */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li,
+footer,
+header,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 * {
   font-family: "Montserrat", source-han-sans-traditional, sans-serif, "Microsoft JhengHei";
   font-style: normal;
@@ -10,7 +33,119 @@
   /* border: 1px solid rgb(255, 255, 255); */
 }
 
+/* ------------------ 區塊------------------ */
 html {
-  background-color: #d4cbc7;
-  margin: 0;
+  background: #b7dfff;
+}
+
+footer {
+  text-align: center;
+  background: #2c1c13;
+  color: #b7dfff;
+  padding: 15px;
+}
+
+section:nth-child(1) {
+  padding: 20px 0 0;
+}
+section:nth-child(2) {
+  background: #2c1c13;
+}
+
+.bg_375 {
+  width: 375px;
+  margin: 0 auto;
+  border: 1px solid #2c1c13;
+}
+
+@media screen and (max-width: 991px) {
+  .bg_375 {
+    width: 100vw;
+  }
+}
+/* ------------------ 大標題 ------------------ */
+.title h1 {
+  padding: 10px 15px 0;
+  font-size: 2.5rem;
+}
+.title h1 span.title_big {
+  font-size: 3.5rem;
+}
+
+/* ------------------ 頁籤 ------------------ */
+.tabcontent {
+  display: none;
+  width: 100%;
+}
+.tabcontent ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.tabcontent ul li:nth-child(1) {
+  width: 75%;
+}
+.tabcontent ul li:nth-child(1) p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+.tabcontent ul li:nth-child(2) {
+  width: 15%;
+  padding: 0 1.5%;
+}
+.tabcontent ul li:nth-child(2) p {
+  font-size: 1.5rem;
+  border: 1px solid #2c1c13;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.tab ul {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0 0;
+  display: flex;
+  text-align: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.tab ul li {
+  width: 25%;
+  position: relative;
+  margin: 0 auto 10px;
+  color: #fff;
+  background: #2c1c13;
+  mix-blend-mode: luminosity;
+}
+.tab ul li h2 {
+  font-size: 2.8rem;
+}
+.tab ul li p {
+  font-size: 0.9rem;
+  color: #b7dfff;
+}
+
+.tab ul li.active {
+  mix-blend-mode: normal;
+}
+.tab ul li.active h2 {
+  animation: ani01 0.8s ease-in-out 0s infinite;
+}
+
+.tab ul li:hover {
+  mix-blend-mode: normal;
+}
+
+@keyframes ani01 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=style-2025.css.map */

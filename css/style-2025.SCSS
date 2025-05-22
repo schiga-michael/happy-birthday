@@ -1,17 +1,153 @@
+/* ---reset.css--- */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li,
+footer,
+header,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  // box-sizing: border-box;
+}
+
 * {
-    font-family: "Montserrat", source-han-sans-traditional, sans-serif,
-      "Microsoft JhengHei";
-    font-style: normal;
-    text-decoration: none;
-    outline: none;
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
-    /* 解決手機端頁面的鼠標點擊出現藍色背景 */
-    /* border: 1px solid rgb(255, 255, 255); */
+  font-family: "Montserrat", source-han-sans-traditional, sans-serif,
+    "Microsoft JhengHei";
+  font-style: normal;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  /* 解決手機端頁面的鼠標點擊出現藍色背景 */
+  /* border: 1px solid rgb(255, 255, 255); */
+}
+
+$primary-100: #b7dfff;
+$secondary-100: #2c1c13;
+
+/* ------------------ 區塊------------------ */
+html {
+  background: $primary-100;
+}
+footer {
+  text-align: center;
+  background: $secondary-100;
+  color: $primary-100;
+  padding: 15px;
+}
+section {
+  &:nth-child(1) {
+    padding: 20px 0 0;
   }
-  
-  html {
-    background-color: #d4cbc7;
-    margin: 0;
+  &:nth-child(2) {
+    background: $secondary-100;
   }
-  
+}
+.bg_375 {
+  width: 375px;
+  margin: 0 auto;
+  border: 1px solid $secondary-100;
+}
+@media screen and (max-width: 991px) {
+  .bg_375 {
+    width: 100vw;
+  }
+}
+/* ------------------ 大標題 ------------------ */
+.title h1 {
+  padding: 10px 15px 0;
+  font-size: 2.5rem;
+  span.title_big {
+    font-size: 3.5rem;
+  }
+}
+/* ------------------ 頁籤 ------------------ */
+.tabcontent {
+  display: none;
+  width: 100%;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    li {
+      &:nth-child(1) {
+        width: 75%;
+        p {
+          font-size: 1.2rem;
+          line-height: 1.6;
+          text-align: justify;
+          // text-decoration: underline;
+        }
+      }
+      &:nth-child(2) {
+        width: 15%;
+        padding: 0 1.5%;
+        p {
+          font-size: 1.5rem;
+          border: 1px solid $secondary-100;
+          border-radius: 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.tab ul {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0 0;
+  display: flex;
+  text-align: center;
+  list-style: none;
+  flex-wrap: wrap;
+  li {
+    width: 25%;
+    position: relative;
+    margin: 0 auto 10px;
+    color: #fff;
+    background: $secondary-100;
+    mix-blend-mode: luminosity;
+    h2 {
+      font-size: 2.8rem;
+    }
+    p {
+      font-size: 0.9rem;
+      color: $primary-100;
+    }
+  }
+}
+.tab ul li.active {
+  mix-blend-mode: normal;
+  h2 {
+    animation: ani01 0.8s ease-in-out 0s infinite;
+  }
+}
+.tab ul li:hover {
+  mix-blend-mode: normal;
+}
+
+@keyframes ani01 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
