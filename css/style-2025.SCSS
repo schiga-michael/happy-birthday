@@ -68,6 +68,7 @@ footer {
 .title h1 {
   padding: 10px 15px 0;
   font-size: 3rem;
+  line-height: 1.3;
   span.title_big {
     font-size: 4rem;
     margin-left: -5px;
@@ -89,6 +90,10 @@ footer {
           font-size: 1.2rem;
           line-height: 1.6;
           text-align: justify;
+        }
+        p.text_big {
+          font-size: 1.8rem;
+          font-weight: 600;
         }
       }
       &:nth-child(2) {
