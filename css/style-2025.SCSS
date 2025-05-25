@@ -167,14 +167,14 @@ footer {
     .text_container {
       padding: 20px 0 0;
       width: 100vw;
-      min-height: 32vh;
+      min-height: 30vh;
       height: auto;
     }
     .emoji_container {
       padding: 10px 0 0;
       background: $secondary-100;
       width: 100vw;
-      min-height: 64vh;
+      min-height: 65vh;
       height: auto;
       position: relative;
       z-index: 2;
@@ -191,22 +191,7 @@ footer {
       }
     }
   }
-  footer {
-    background: $secondary-100;
-    color: $primary-100;
-    padding: 10px 0 30px;
-    border-top: none;
-  }
-}
 
-@media screen and (max-width: 375px) {
-  .title h1 {
-    padding: 10px 15px 0;
-    font-size: 2.2rem;
-    span.title_big {
-      font-size: 3rem;
-    }
-  }
   .tabcontent ul li {
     &:nth-child(1) {
       p {
@@ -227,5 +212,21 @@ footer {
   }
   .tab ul li p {
     font-size: 0.7rem;
+  }
+  footer {
+    background: $secondary-100;
+    color: $primary-100;
+    padding: 10px 0 30px;
+    border-top: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .title h1 {
+    padding: 10px 15px 0;
+    font-size: 2.2rem;
+    span.title_big {
+      font-size: 3rem;
+    }
   }
 }

@@ -165,14 +165,14 @@ footer {
   section .text_container {
     padding: 20px 0 0;
     width: 100vw;
-    min-height: 32vh;
+    min-height: 30vh;
     height: auto;
   }
   section .emoji_container {
     padding: 10px 0 0;
     background: #2c1c13;
     width: 100vw;
-    min-height: 64vh;
+    min-height: 65vh;
     height: auto;
     position: relative;
     z-index: 2;
@@ -187,21 +187,6 @@ footer {
     position: relative;
     top: -10.5px;
     left: 2.5vw;
-  }
-  footer {
-    background: #2c1c13;
-    color: #b7dfff;
-    padding: 10px 0 30px;
-    border-top: none;
-  }
-}
-@media screen and (max-width: 375px) {
-  .title h1 {
-    padding: 10px 15px 0;
-    font-size: 2.2rem;
-  }
-  .title h1 span.title_big {
-    font-size: 3rem;
   }
   .tabcontent ul li:nth-child(1) p {
     font-size: 1rem;
@@ -219,5 +204,20 @@ footer {
   }
   .tab ul li p {
     font-size: 0.7rem;
+  }
+  footer {
+    background: #2c1c13;
+    color: #b7dfff;
+    padding: 10px 0 30px;
+    border-top: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .title h1 {
+    padding: 10px 15px 0;
+    font-size: 2.2rem;
+  }
+  .title h1 span.title_big {
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=style-2025.css.map */
